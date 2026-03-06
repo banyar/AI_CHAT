@@ -1,0 +1,64 @@
+ဖန်တီးထားသည့် Files ရှင်းလင်းချက် (မြန်မာဘာသာ)
+Files ၂ ခု ဖန်တီးထားပြီ
+
+ai-train.jsonl                    ← CPE training data (15 entries)
+internal/cpe/cpe.go               ← CPE API client
+internal/rag/agent.go             ← CPE detection ထည့်ပြီး update
+CPE Flow ဘယ်လို အလုပ်လုပ်လဲ
+
+User: "cep အကြောင်းသိချင်ပါတယ်"
+           ↓
+agent.go → buildContext() ခေါ်
+           ↓
+cpe.ExtractID() → CPE ID ရှိမရှိ စစ်
+           ↓ မရှိ
+RAG context တည်း ပေးပြီး AI က CPE ID တောင်းမည်
+AI: "CPE ID ပေးပါ (ဥပမာ: CPE-123456)"
+           ↓
+User: "CPE-123456"
+           ↓
+cpe.ExtractID() → "CPE-123456" ရသည်
+           ↓
+cpe.FetchInfo("CPE-123456") → API ခေါ်
+GET http://localhost:9000/api/cpe/CPE-123456
+           ↓
+API Response:
+{
+  "status": "Online",
+  "signal": "-18 dBm",
+  "uptime": "3 days",
+  "ip_address": "192.168.1.1"
+}
+           ↓
+Context ထဲ ထည့်ပြီး AI ဆီ ပို့
+           ↓
+AI: "CPE-123456 ရဲ့ status Online ဖြစ်ပြီး
+     signal -18 dBm ရှိပါသည်..."
+Config လုပ်နည်း
+CPE API URL ကို environment variable နဲ့ သတ်မှတ်ပါ:
+
+
+# သင့် Frontiir CPE API URL ထည့်ပါ
+export CPE_API_URL=http://your-frontiir-api.com/api/cpe
+
+go run .
+Default (မထည့်ရင်): http://localhost:9000/api/cpe
+
+API Response Format (ကျွန်ုပ်တို့ မျှော်မှန်းသော)
+
+{
+  "cpe_id":     "CPE-123456",
+  "status":     "Online",
+  "signal":     "-18 dBm",
+  "uptime":     "3 days 4 hours",
+  "ip_address": "192.168.100.5",
+  "location":   "Yangon, Hlaing",
+  "message":    ""
+}
+ai-train.jsonl ကို Qdrant ထဲ ထည့်နည်း
+
+# ai-train.jsonl ကို ingest လုပ်
+go run ./cmd/ingest-jsonl --file=ai-train.jsonl
+
+# App start
+go run .

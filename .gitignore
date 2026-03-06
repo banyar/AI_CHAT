@@ -1,0 +1,71 @@
+# ==============================
+# Environment files - လုံးဝ commit မလုပ်ရ
+# ==============================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ==============================
+# Go build output
+# ==============================
+/frontiir-ai
+/go-ai-rag
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/dist/
+/bin/
+
+# Go module cache
+/vendor/
+
+# ==============================
+# IDE & Editor files
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+/tmp/
+
+# ==============================
+# Notebook checkpoints
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Database & vector store data
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+vector_data/
+
+# ==============================
+# Credentials & secrets
+# ==============================
+*.pem
+*.key
+*.cert
+credentials.json
+service-account.json

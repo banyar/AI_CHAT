@@ -1,0 +1,20 @@
+{"instruction": "ကျွန်တော့် account အကြောင်း သိချင်တယ်", "input": "", "output": "account အချက်အလက် စစ်ဆေးဖို့ သင့် Frontiir မှာ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။ ဥပမာ - 09-12345678"}
+{"instruction": "ကျွန်မ account ကို ကြည့်ချင်တယ်", "input": "", "output": "account ကြည့်ဖို့ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် လိုအပ်ပါသည်။ ဖုန်းနံပါတ် ပေးပါ။"}
+{"instruction": "09-12345678 ရဲ့ account စစ်ပေးပါ", "input": "", "output": "ဖုန်းနံပါတ် 09-12345678 ၏ account အချက်အလက် စစ်ဆေးနေပါသည်။ ခဏစောင့်ပါ။"}
+{"instruction": "ကျွန်တော့် package ဘာဆိုတာ သိချင်တယ် 09-98765432", "input": "", "output": "ဖုန်းနံပါတ် 09-98765432 ၏ package အချက်အလက် စစ်ဆေးနေပါသည်။ ခဏစောင့်ပါ။"}
+{"instruction": "My phone is 09-11223344, check my account", "input": "", "output": "Checking account details for phone number 09-11223344. Please wait a moment."}
+{"instruction": "account status ဘယ်လိုလဲ", "input": "", "output": "account status စစ်ဆေးဖို့ Frontiir မှာ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။"}
+{"instruction": "ကျွန်တော့် internet package ဘာဖြစ်နေလဲ", "input": "", "output": "သင့် package အချက်အလက် စစ်ဆေးဖို့ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။ ဥပမာ - 09-12345678"}
+{"instruction": "ငါ့ package expire ဘယ်တော့လဲ", "input": "", "output": "package expiry date စစ်ဆေးဖို့ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။"}
+{"instruction": "09-55667788 account active လား", "input": "", "output": "ဖုန်းနံပါတ် 09-55667788 ၏ account status စစ်ဆေးနေပါသည်။ ခဏစောင့်ပါ။"}
+{"instruction": "balance ဘယ်လောက် ကျန်တယ်", "input": "", "output": "account balance စစ်ဆေးဖို့ Frontiir မှာ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။"}
+{"instruction": "Check my balance, my number is 09-44332211", "input": "", "output": "Checking account balance for phone number 09-44332211. Please wait a moment."}
+{"instruction": "ကျွန်တော် pay လုပ်ထားပြီလား စစ်ချင်တယ်", "input": "", "output": "payment history စစ်ဆေးဖို့ Frontiir မှာ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။"}
+{"instruction": "+95-9-12345678 account check", "input": "", "output": "Checking account for phone number +95-9-12345678. Please wait a moment."}
+{"instruction": "ကျွန်တော့် address ပြောင်းချင်တယ်", "input": "", "output": "address ပြောင်းရန် Frontiir customer service 01-234567 သို့ ဆက်သွယ်ပါ သို့မဟုတ် မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပြီး account verify လုပ်ပါ။"}
+{"instruction": "ကျွန်မ account inactive ဖြစ်နေတယ်", "input": "", "output": "account inactive ဖြစ်နေပါက ဖုန်းနံပါတ် ပေးပါ၊ account status စစ်ဆေးပြီး ကူညီပေးပါမည်။"}
+{"instruction": "09-77889900 package renew လုပ်ချင်တယ်", "input": "", "output": "ဖုန်းနံပါတ် 09-77889900 ၏ account စစ်ဆေးနေပါသည်။ package renew လုပ်ဖို့ balance နှင့် expiry စစ်ပေးပါမည်။"}
+{"instruction": "ကျွန်တော် Frontiir customer ID ဘာလဲ", "input": "", "output": "Customer ID စစ်ဆေးဖို့ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပါ။ Customer ID ကို account details မှ တွေ့နိုင်ပါသည်။"}
+{"instruction": "What is my customer ID, phone 09-33445566", "input": "", "output": "Checking customer details for phone number 09-33445566. Your customer ID will be shown in the account information."}
+{"instruction": "ကျွန်တော့် account ကို deactivate လုပ်ချင်တယ်", "input": "", "output": "account deactivate လုပ်ရန် Frontiir customer service 01-234567 သို့ ဆက်သွယ်ပါ။ မှတ်ပုံတင်ထားသော ဖုန်းနံပါတ် ပေးပြီး identity verify လုပ်ရပါမည်။"}
+{"instruction": "ဖုန်းနံပါတ် 09-12341234 နဲ့ ဆက်သွယ်ထားတဲ့ package ဘာလဲ", "input": "", "output": "ဖုန်းနံပါတ် 09-12341234 ၏ package အချက်အလက် စစ်ဆေးနေပါသည်။ ခဏစောင့်ပါ။"}

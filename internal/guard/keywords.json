@@ -1,0 +1,33 @@
+{
+  "blocked_keywords": [
+    "fuck",
+    "shit",
+    "bitch",
+    "asshole",
+    "bastard",
+    "kill you",
+    "ကောင်မ",
+    "ငါးစိမ်း",
+    "ငရဲ",
+    "အပုပ်",
+    "ကျိန်ဆဲ"
+  ],
+  "warned_keywords": [
+    "damn",
+    "crap",
+    "idiot",
+    "stupid",
+    "moron",
+    "loser",
+    "dumb",
+    "retard",
+    "hate you",
+    "shut up",
+    "အမိုက်",
+    "ပေါက်ကရ",
+    "မိုက်တယ်",
+    "ညံ့တယ်",
+    "အချိုင်",
+    "ကြောင်တယ်"
+  ]
+}

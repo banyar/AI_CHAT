@@ -1,0 +1,59 @@
+Run လုပ်နည်း
+Prerequisites: Ollama နှင့် Qdrant run နေရမည်
+
+
+# Qdrant ဖွင့်မည် (Docker)
+docker run -p 6333:6333 qdrant/qdrant
+
+# Ollama models ဆွဲမည်
+ollama pull llama3.2
+ollama pull nomic-embed-text
+
+# Program run မည်
+go run .
+Commands:
+
+ingest <text> - data ထည့်မည် (e.g. ingest My name is Ko Ko)
+clear - conversation history ဖျက်မည်
+quit - ထွက်မည်
+
+
+
+
+Build အောင်မြင်တယ်။
+
+Web UI Integration - ရှင်းလင်းချက် (မြန်မာဘာသာ)
+ဘာတွေ ထပ်ပေါင်းထည့်လဲ
+ဖိုင် ၃ ခု ပြောင်းလဲ/ထည့်သွင်းခဲ့တယ်:
+
+ဖိုင်	လုပ်ဆောင်ချက်
+internal/server/server.go	HTTP server + JSON API endpoints ၃ ခု
+static/index.html	Browser မှာ မြင်ရမယ့် Chat UI
+main.go	CLI ဖြုတ်ပြီး Web Server အဖြစ် ပြောင်း
+API Endpoints
+
+POST /api/chat     → message ပို့ → AI response ရ
+POST /api/ingest   → text ထည့် → knowledge base သွင်း
+POST /api/clear    → chat history ဖျက်
+GET  /             → HTML chat UI ပြ
+Web UI Features
+Dark theme chat interface
+Typing indicator (dot animation) - AI သည် ဖြေနေသောအချိန် မြင်ရ
+Knowledge Base sidebar - ဘယ်ဖက်မှာ text ထည့်နိုင်
+Toast notification - ingest/clear ပြီးတိုင်း popup မြင်ရ
+Enter = send, Shift+Enter = newline
+Run နည်း
+
+# Qdrant ဖွင့်မည်
+docker run -p 6333:6333 qdrant/qdrant
+
+# Ollama models စစ်ဆေးမည်
+ollama pull llama3.2
+ollama pull nomic-embed-text
+
+# Server run မည်
+go run .
+ပြီးရင် browser မှာ http://localhost:8080 ဖွင့်ပါ။
+
+
+7Q6Qq@1F/uE85w2h

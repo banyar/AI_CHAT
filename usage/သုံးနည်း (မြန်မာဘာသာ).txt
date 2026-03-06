@@ -1,0 +1,35 @@
+သုံးနည်း (မြန်မာဘာသာ)
+Command ၃ မျိုး
+1. Base model + App အလိုအလျောက် စတင်
+
+
+bash train.sh
+→ qwen2.5:3b ဆွဲ + frontiir-ai model တည်ဆောက် + Go app စတင်
+
+2. Fine-tuned GGUF + App အလိုအလျောက် စတင်
+
+
+bash train.sh ~/Downloads/frontiir-qwen-gguf-Q4_K_M.gguf
+→ Colab ကနေ download လုပ်ထားတဲ့ GGUF ထည့် + Go app စတင်
+
+3. Setup ပဲ လုပ် — App မစ (setup only)
+
+
+bash train.sh --setup-only
+→ Model တည်ဆောက်ရုံပဲ၊ app မစတင်ဘူး
+
+Script လုပ်ဆောင်ပုံ (အဆင့်ဆင့်)
+
+bash train.sh
+    ↓
+Ollama ရှိမရှိ စစ်ဆေး
+    ↓
+Model တည်ဆောက် (frontiir-ai)
+    ↓
+Ollama server ရှိမရှိ စစ်ဆေး → မရှိရင် auto-start
+    ↓
+OLLAMA_MODEL=frontiir-ai go run .   ← Go app စတင်
+⚠️ Ollama install မထားရင် အောက်ပါ command နဲ့ install လုပ်ပါ:
+
+
+curl -fsSL https://ollama.com/install.sh | sh

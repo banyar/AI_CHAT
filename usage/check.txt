@@ -1,0 +1,19 @@
+Terminal log      → Error message ရှိမရှိ
+/api/status       → Colab URL ချိတ်ဆက်မှု
+curl /api/tags    → Model load ဖြစ်မဖြစ်
+nvidia-smi        → GPU သုံးနေမနေ
+အမြန်ဆုံး နည်းလမ်း — Browser မှာ http://localhost:8080/api/status ဖွင့်ကြည့်မည်။ "is_colab": true မြင်ရင် Colab နှင့် ချိတ်ဆက်နေပြီ ✅
+
+
+
+Ollama models list ကြည့်:
+
+
+curl https://lavonne-unrepudiable-roundedly.ngrok-free.dev/api/tags
+Chat တိုက်စစ်:
+
+
+curl -X POST https://lavonne-unrepudiable-roundedly.ngrok-free.dev/api/chat \
+  -H "Content-Type: application/json" \
+  -d "{\"model\":\"yxchia/seallms-v3-7b:Q4_K_M\",\"messages\":[{\"role\":\"user\",\"content\":\"မင်္ဂလာပါ\"}],\"stream\":false}" \
+  | python3 -m json.tool
